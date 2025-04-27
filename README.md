@@ -22,3 +22,10 @@ python -m pip install paddlepaddle==3.0.0rc1 -i https://www.paddlepaddle.org.cn/
 
 
 pip install paddleocr
+
+# 打docker镜像
+# 构建镜像
+docker build -t ocr-service .
+
+# 运行容器
+docker run -p 8000:8000 ocr-service
