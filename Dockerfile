@@ -17,7 +17,10 @@ RUN apt-get update && apt-get install -y \
 # Copy the requirements file into the container
 COPY requirements.txt .
 
-# Install paddlepaddle first from official source
+# Install numpy first to ensure correct version
+RUN pip install numpy==1.23.5
+
+# Install paddlepaddle from official source
 RUN pip install paddlepaddle==3.0.0rc1 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
 
 # Install other Python dependencies
