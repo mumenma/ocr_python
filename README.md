@@ -32,7 +32,7 @@ pip install paddleocr
 docker build -t ocr-service .
 
 # 运行容器
-docker run -p 8000:8000 ocr-service
+docker run -p 8010:8010 ocr-service
 
 
 # 下载docker 镜像运行方法
