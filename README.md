@@ -10,6 +10,10 @@ pip install python-multipart  使用上传功能
 uvicorn main:app --reload ， 如果main函数里面直接用了uvicorn的话，就不用这个了，直接运行Python就可以了
 
 
+
+# 所使用的库
+https://github.com/PaddlePaddle/PaddleOCR
+
 # 安装PaddlePaddle¶
 
 如果您没有基础的Python运行环境，请参考运行环境准备。
